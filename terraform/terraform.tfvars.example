@@ -1,0 +1,22 @@
+# Example configuration values
+# Copy this file to terraform.tfvars and customize as needed
+
+aws_region               = "us-east-1"
+environment              = "production"
+service_name             = "africangriot"
+ecr_repository_name      = "africangriot"
+image_tag                = "latest"
+container_port           = 8080
+cpu                      = "512"
+memory                   = "1024"
+desired_count            = 1
+min_tasks                = 1
+max_tasks                = 1
+target_cpu_utilization   = 70
+health_check_path        = "/health"
+max_file_size            = 5242880
+log_retention_in_days    = 7
+vpc_cidr                 = "10.0.0.0/16"
+public_subnet_cidrs      = ["10.0.1.0/24", "10.0.2.0/24"]
+create_uploads_bucket    = false
+# uploads_bucket_name    = "africangriot-uploads-example"
